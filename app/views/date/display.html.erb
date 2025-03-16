@@ -1,0 +1,34 @@
+<h1>
+    user id
+    <%= @user.id %>
+</h1>
+
+<h1>
+    user name
+    <%= @user.name %>
+</h1>
+
+<h1>
+    email
+    <%= @user[:email] %>
+</h1>
+
+<hr  />
+
+<table bgcolor="white" border="1" bordered="1" cellpadding="10" cellspacing="0">
+    <thead>
+        <tr>
+            <th>Department id</th>
+            <th>Department name</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @divisions.each do |division| %>
+            <tr>
+                <td><%= division.id %></td>
+                <td><%= division.name %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>

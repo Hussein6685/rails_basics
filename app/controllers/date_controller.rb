@@ -15,6 +15,13 @@ class DateController < ApplicationController
     # @name = params[:name]
   end
 
+
+  def display
+    @user = User.find(1)
+    @divisions = Division.all
+    # render plain: "Displaying the name #{params[:name]}"
+  end
+
   def check_name_param
     puts "checking the name #{params[:name]} ==============="
   end

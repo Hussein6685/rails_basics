@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   get "/date", to: "date#index"
   post "/search", to: "date#search"
   get "/say-welcome/:name", to: "date#say_welcome"
+  get "/display", to: "date#display"
 end
