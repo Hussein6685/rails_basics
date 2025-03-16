@@ -1,0 +1,5 @@
+<%= form_with url: "/search", data: {turbo: false}, method: :post do |form| %>
+    <%= form.label :query, "search about:" %>
+    <%= form.text_field :query %>
+    <%= form.submit "Search" %>
+<% end %>
