@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2025_03_16_070804) do
+ActiveRecord::Schema[7.0].define(version: 2025_03_16_073130) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -18,6 +18,16 @@ ActiveRecord::Schema[7.0].define(version: 2025_03_16_070804) do
     t.text "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "profiles", force: :cascade do |t|
+    t.text "father_name"
+    t.text "mother_name"
+    t.text "address"
+    t.bigint "student_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["student_id"], name: "index_profiles_on_student_id"
   end
 
   create_table "seasons", force: :cascade do |t|
@@ -51,5 +61,6 @@ ActiveRecord::Schema[7.0].define(version: 2025_03_16_070804) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "profiles", "students"
   add_foreign_key "students", "divisions"
 end

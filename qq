@@ -1,0 +1,11 @@
+=> 
+[32m#<Profile:0x00007fbc279a9b98[0m
+ id: [34m[1m1[0m,
+ father_name: [31m[1m"[0m[31mNaser[0m[31m[1m"[0m,
+ mother_name: [31m[1m"[0m[31mSaffa[0m[31m[1m"[0m,
+ address: [31m[1m"[0m[31mSA[0m[31m[1m"[0m,
+ student_id: [34m[1m1[0m,
+ created_at:
+  Sun, 16 Mar 2025 07:36:49.227947000 UTC +00:00,
+ updated_at:
+  Sun, 16 Mar 2025 07:36:49.227947000 UTC +00:00[32m>[0m

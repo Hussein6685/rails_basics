@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  father_name: MyText
+  mother_name: MyText
+  address: MyText
+  student: one
+
+two:
+  father_name: MyText
+  mother_name: MyText
+  address: MyText
+  student: two
