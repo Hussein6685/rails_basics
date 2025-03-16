@@ -15,26 +15,4 @@
 
 <hr  />
 
-<% if @divisions.length > 0 %>
-
-<table bgcolor="white" border="1" bordered="1" cellpadding="10" cellspacing="0">
-    <thead>
-        <tr>
-            <th>Department id</th>
-            <th>Department name</th>
-        </tr>
-    </thead>
-
-    <tbody>
-        <% @divisions.each do |division| %>
-            <tr>
-                <td><%= division.id %></td>
-                <td><%= division.name %></td>
-            </tr>
-        <% end %>
-    </tbody>
-</table>
-
-<% else %>
-    <h1>There is no department</h1>
-<% end %>
+<%= render partial: "partials/table", locals: {title: "Sections table"}%>
